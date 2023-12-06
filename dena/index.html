@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dena Cosméticos</title>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/77185058b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Aba de navegação -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+        <img src="./images/logo.png" alt="Logo da Loja" />
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <!-- Aba de navegação  FIM -->
+    <!-- Produtos -->
+    <section class="products">
+      <div class="section-title">
+        <h2>Nossos Produtos!</h2>
+      </div>
+      <div class="products-center">
+        <!-- Produto único -->
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/product-1.jpeg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              Adicionar ao carrinho
+            </button>
+          </div>
+          <h3>Produto 1</h3>
+          <h4>R$ 90</h4>
+        </article>
+        <!-- Produto único FIM -->
+      </div>
+    </section>
+    <!-- Produtos FIM -->
+    <!-- Carrinho -->
+    <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fas fa-window-close"></i>
+      </span>
+      <h2>Seu carrinho!</h2>
+      <div class="cart-content">
+    </div>  
+    <div class="cart-footer">
+      <h3>Total : <span class="cart-total">0</span></h3>
+      <button class="clear-cart">Limpar Carrinho</button>
+    </div>
+    </div>
+    <!-- Carrinho FIM -->
+    <script src="app.js"></script>
+  </body>
+</html>
