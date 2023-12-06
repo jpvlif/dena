@@ -55,7 +55,7 @@ class UI {
             </button>
           </div>
           <h3>${product.title}</h3>
-          <h4>${product.price}</h4>
+          <h4>R$${product.price}</h4>
         </article>
         <!-- Produto único FIM -->
 `;
@@ -97,7 +97,7 @@ class UI {
       tempTotal += item.price * item.amount;
       itemsTotal += item.amount;
     });
-    cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+    cartTotal.innerText = `R$ ${parseFloat(tempTotal.toFixed(2))}`;
     cartItems.innerText = itemsTotal;
   }
   addCartItem(item) {
@@ -106,7 +106,7 @@ class UI {
     div.innerHTML = ` <img src=${item.image} alt="produto"/>
     <div>
       <h4>${item.title}</h4>
-      <h5>${item.price}</h5>
+      <h5>R$ ${item.price}</h5>
       <span class="remove-item" data-id=${item.id}>Remover</span>
     </div>
     <div>

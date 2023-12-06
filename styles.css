@@ -54,6 +54,13 @@ body {
   border-radius: 30%;
   color: var(--mainWhite);
 }
+.logoLoja{
+  font-family: 'Lato', sans-serif; 
+  max-height: 100%; 
+  width: auto; 
+  color: var(--mainBlack);
+  font-size: 40px;
+}
 /* --------------- Aba de Navegação FIM ---------------- */
 
 /* --------------- Produtos ---------------- */
@@ -80,6 +87,7 @@ body {
 .img-container {
   position: relative;
   overflow: hidden;
+  height: 300px;
 }
 .bag-btn {
   position: absolute;
@@ -107,6 +115,8 @@ body {
 .product-img {
   display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   min-height: 12rem;
   transition: var(--mainTransition);
 }
