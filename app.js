@@ -3,11 +3,11 @@ var client = contentful.createClient({
   accessToken: 'Ga2_iLwNxei-SA7gxiG6eS-43w8X6S51C6_DjvWV5ZI',
 });
 
-
-
-
 //Variaveis
-
+const navBtn = document.querySelector(".nav-icon");
+const navOverlay = document.querySelector(".nav-overlay");
+const navDOM = document.querySelector(".navMenu");
+const closeNavBtn = document.querySelector(".close-nav");
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
 const clearCartBtn = document.querySelector(".clear-cart");
@@ -205,6 +205,27 @@ class UI {
     return buttonsDOM.find((button) => button.dataset.id === id);
   }
 }
+
+function showNav() {
+  navOverlay.classList.add("transparentBcg");
+  navDOM.classList.add("showNav");
+}
+
+function hideNav() {
+  navOverlay.classList.remove("transparentBcg");
+  navDOM.classList.remove("showNav");
+}
+
+navBtn.addEventListener("click", () => {
+  showNav();
+});
+
+closeNavBtn.addEventListener("click", () => {
+  hideNav();
+});
+
+
+
 //Armazenamento Local
 class Storage {
   static saveProducts(products) {
