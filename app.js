@@ -1,6 +1,6 @@
 var client = contentful.createClient({
-  space: 'dpnmca8yx1hi',
-  accessToken: 'Ga2_iLwNxei-SA7gxiG6eS-43w8X6S51C6_DjvWV5ZI',
+  space: 'dfc0yjwaccp3',
+  accessToken: 't9Krn8asOYpP-ioUSYI47V0IqH8OI1dZC49ShLSrmxM',
 });
 
 //Variaveis
